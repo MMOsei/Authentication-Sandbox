@@ -1,0 +1,13 @@
+<h1>Signup#index</h1>
+<p>Find me in app/views/signup/index.html.erb</p>
+
+<%= form_for :trip, url: {action: "show"}, html: {method: "get"} do |f| %>
+
+  <%= f.select :chapter_id, options_for_select(@chapters.collect { |chapter|
+    [chapter.chapter_name.titleize, chapter.id] }, 1), {}, { id: 'chapters_select' } %>
+
+  <%= f.select :country_id, options_for_select(@countries.collect { |country|
+    [country.country_name.titleize, country.id] }, 0), {}, { id: 'countries_select' } %>
+
+  <%= f.submit "Go!" %>
+<% end %>
