@@ -1,10 +1,11 @@
 /* BOOTSTRAP OVERRIDES */
 
+// Global styles for font
 * {
   font-family: 'Raleway', sans-serif;
   font-weight:200;
 }
-
+// Adds space so that 'yeild' content sits below NAV
 body {
   padding-top: 50px;
   -webkit-background-size: cover;
@@ -16,28 +17,29 @@ body {
   background-position: center;
 }
 
+// ========== NAV SECTION START ===========
 .navbar {
   background: #dc3545;
   border-bottom: none;
   padding-bottom: 5px;
-
-  // affects nav bar links
+  // below makes NAV bar links white and bold
   .nav-link a, .nav-link {
     color: white !important;
     font-weight: bold !important;
   }
 }
+// LOGO in NAV
+.navbar-brand {
+  padding-top:5px;
+  padding-bottom:5px;
+  width: 75px;
+}
+// ========== NAV SECTION END ===========
 
 h1 {
   font-size: 4.0em;
   margin-top:40px;
   font-weight: 200;
-}
-
-.navbar-brand {
-  padding-top:5px;
-  padding-bottom:5px;
-  width: 75px;
 }
 
 .jumbotron-fluid {

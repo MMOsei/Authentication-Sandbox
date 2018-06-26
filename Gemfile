@@ -2,13 +2,10 @@ source 'https://rubygems.org'
 git_source(:github) { |repo| "https://github.com/#{repo}.git" }
 
 # Chosen gems
+ruby '2.2.5'
 gem 'devise'
-gem 'pundit'
 gem 'bootstrap-sass', '~> 3.3.7'
 gem 'jquery-rails'
-gem 'popper_js', '~> 1.12.9'
-gem 'figaro'
-gem 'country_select'
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '~> 5.2.0'
