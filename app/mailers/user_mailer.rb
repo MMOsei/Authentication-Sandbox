@@ -3,8 +3,8 @@ class UserMailer < ApplicationMailer
     @user = user
     mail(to: @user.email, subject: 'Welcome to COYI')
   end
-  def welcome_email(user)
+  def chapter_email(user)
     @user = user
-    mail(to: @user.email, subject: 'Welcome to COYI')
+    mail(to: 'ylangue@spartaglobal.com', subject: 'Welcome to COYI')
   end
 end

@@ -6,9 +6,12 @@ class User < ApplicationRecord
   def after_confirmation
     def welcome_email
       UserMailer.welcome_email(self).deliver
-      UserMailer.welcome_email(self).deliver
+    end
+    def chapter_email
+      UserMailer.chapter_email(self).deliver
     end
     welcome_email;
+    chapter_email;
   end
 
 end
