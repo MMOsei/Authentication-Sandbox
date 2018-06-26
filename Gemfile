@@ -1,8 +1,6 @@
 source 'https://rubygems.org'
 git_source(:github) { |repo| "https://github.com/#{repo}.git" }
 
-
-
 # Chosen gems
 gem 'devise'
 gem 'pundit'
@@ -11,8 +9,6 @@ gem 'jquery-rails'
 gem 'popper_js', '~> 1.12.9'
 gem 'figaro'
 gem 'country_select'
-
-
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '~> 5.2.0'
