@@ -1,23 +1,24 @@
 <!DOCTYPE html>
 <html>
-<head>
+  <head>
+    <%= csrf_meta_tags %>
+    <%= csp_meta_tag %>
 
-  <%= csrf_meta_tags %>
-  <%= csp_meta_tag %>
-
-  <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>COYI</title>
     <%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track': 'reload' %>
     <%= javascript_include_tag 'application', 'data-turbolinks-track' => 'reload' %>
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
     <link href="https://fonts.googleapis.com/css?family=Roboto:200,400,700" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Raleway:200,400" rel="stylesheet">
-</head>
+    <link href="/logo_100.png" rel="shortcut icon">
+  </head>
 
-<body>
-  <%= render 'partials/navbar' %>
-  <div class="container-fluid">
-    <%= yield %>
-  </div>
-</body>
+  <body>
+    <%= render 'partials/nav' %>
+    <div class="container-fluid">
+      <%= yield %>
+    </div>
+    <%= render 'partials/footer' %>
+  </body>
 </html>
