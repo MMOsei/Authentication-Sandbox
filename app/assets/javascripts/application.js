@@ -16,3 +16,11 @@
 //= require_tree .
 //= require jquery3
 //= require bootstrap
+window.addEventListener("scroll", function() {
+    if (window.scrollY > 100) {
+        $('.navbar').fadeOut();
+    }
+    else {
+        $('.navbar').fadeIn();
+    }
+},false);
