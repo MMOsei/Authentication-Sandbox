@@ -87,6 +87,26 @@ body {
 }
 // ========== STORIES SECTION END ===========
 
+// ========== PARALLAX START ===========
+.city-lights {
+  background-image: url("/images/city_lights.jpeg");
+  height: 400px;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.city-bg {
+  background-image: url("/images/city_bg.jpeg");
+  height: 400px;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+// ========== PARALLAX END ===========
+
 // ========== FOOTER SECTION START ===========
 footer {
   padding: 10px 0px;
