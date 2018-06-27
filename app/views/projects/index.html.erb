@@ -20,7 +20,7 @@
         <td><%= project.impact %></td>
         <td><%= project.businesscase %></td>
         <td><%= project.user_id %></td>
-        <td><%= link_to 'Show', user_projects_path %></td>
+        <td><%= link_to 'Show', user_project_path(@user,project) %></td>
         <td><%= link_to 'Edit', edit_user_project_path(@user,project) %></td>
         <td><%= link_to 'Destroy', user_project_path(@user,project), method: :delete, data: { confirm: 'Are you sure?' } %></td>
       </tr>

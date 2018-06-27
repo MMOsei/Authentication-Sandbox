@@ -2,7 +2,7 @@ Rails.application.routes.draw do
   resources :users do
     resources :projects
   end
-  
+
   default_url_options :host => "http://localhost:3000"
 
   devise_for :users
