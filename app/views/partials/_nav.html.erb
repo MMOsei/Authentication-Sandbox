@@ -16,10 +16,10 @@
     <!-- Collect the nav links, forms, and other content for toggling -->
     <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
       <ul class="nav navbar-nav">
-      </ul>
-      <%if user_signed_in? %>
+        <% if user_signed_in? %>
         <li class="nav-link"><%= link_to 'Project Hub', user_projects_path(current_user) %></li>
-      <%end%>
+        <%end%>
+      </ul>
       <ul class="nav navbar-nav navbar-right">
         <li class="dropdown">
           <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Members<span class="caret"></span></a>
