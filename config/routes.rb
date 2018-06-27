@@ -1,13 +1,12 @@
 Rails.application.routes.draw do
+  devise_for :users
+
   resources :users do
     resources :projects
   end
 
   default_url_options :host => "http://localhost:3000"
 
-  devise_for :users, controllers: {
-    sessions: 'users/sessions'
-  }
 
   root 'static#home'
 
