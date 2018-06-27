@@ -113,3 +113,23 @@ footer {
   text-align: center;
 }
 // ========== FOOTER SECTION END ===========
+
+@media only screen and (max-width: 991.98px) {
+  .city-lights {
+    height: 350px;
+  }
+
+  .city-bg {
+    height: 350px;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .city-lights {
+    height: 30vh;
+  }
+
+  .city-bg {
+    height: 30vh;
+  }
+}
