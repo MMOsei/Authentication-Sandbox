@@ -19,9 +19,9 @@
 
 window.addEventListener("scroll", function() {
     if (window.scrollY > 100) {
-        $('.navbar').fadeOut('slow');
+        $('.navbar').addClass("transparent-bg");
     }
     else {
-        $('.navbar').fadeIn('slow');
+        $('.navbar').removeClass("transparent-bg");
     }
 },false);
