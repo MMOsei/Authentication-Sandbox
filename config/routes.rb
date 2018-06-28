@@ -1,4 +1,5 @@
 Rails.application.routes.draw do
+  devise_for :admins
   default_url_options :host => "http://localhost:3000"
 
   devise_for :users
