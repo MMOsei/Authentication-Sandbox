@@ -1,0 +1,40 @@
+<%= form_with(model: project, url:[@user, @project], local: true) do |form| %>
+  <% if project.errors.any? %>
+  <div id="error_explanation">
+    <h2><%= pluralize(project.errors.count, "error") %> prohibited this project from being saved:</h2>
+
+    <ul>
+      <% project.errors.full_messages.each do |message| %>
+      <li><%= message %></li>
+      <% end %>
+    </ul>
+  </div>
+  <% end %>
+
+  <div class="row">
+    <div class="col-md-6 col-md-offset-3">
+
+    <div class="form-group">
+      <%= form.label :intro, "Product Intro" %> <br>
+      <%= form.text_area :intro, placeholder: "Enter your product introduction here", class: "form-control projectText", rows:"3"%>
+      <small>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Libero quia deserunt mollitia soluta ratione pariatur dolorum totam et praesentium sequi esse ad possimus error.</small>
+    </div>
+
+    <div class="form-group">
+      <%= form.label :impact, "Social Impact" %> <br>
+      <%= form.text_area :impact, class: "form-control projectText",rows:"3", placeholder: "Enter your social impact(s) here"%>
+      <small>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Libero quia deserunt mollitia soluta ratione pariatur dolorum totam et praesentium sequi esse ad possimus error.</small>
+    </div>
+
+    <div class="form-group">
+      <%= form.label :businesscase, "Business Case" %> <br>
+      <%= form.text_area :businesscase, class: "form-control projectText", rows:"3", placeholder: "Enter your business case here"%>
+      <small>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Libero quia deserunt mollitia soluta ratione pariatur dolorum totam et praesentium sequi esse ad possimus error.</small>
+    </div>
+
+    <div class="actions text-center">
+      <%= form.submit class: "btn btn-danger"%>
+    </div>
+  </div>
+</div>
+<% end %>
